@@ -1,0 +1,217 @@
+::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    width: 15px;
+  }
+  
+  /* Alterar a cor do "rastro" da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff9a00;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ff9900c4;
+  }
+  
+  .listaNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuResponsivo
+{
+    display: none;
+}
+.navResponsivo{
+    display: none;
+}
+
+.navInfo
+{
+    align-items: center;
+    background-color: #081974;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 50px;
+    width: 700px;
+    
+}
+
+.navInfo a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+}
+
+.navInfo a:hover{
+    color: #ff9a00 ;
+    border-bottom: 2px solid #ff9a00;
+}
+
+
+.icones{
+    margin-right: 100px ;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+.icones a{
+    color: white;
+}
+
+video
+{
+    display: block;
+    z-index: -1;
+}
+
+.propaganda{
+    width: 100%;
+    background-color: rgba(8, 24, 116, 1);
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    padding: 40px;
+}
+
+.propagandalinks{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+     
+}
+
+.propagandalinks a{
+    text-decoration: none;
+}
+
+.navBar
+{
+    position: fixed;
+    width: 100%;
+}
+
+#btn-mobile
+{
+    display: none;
+    font-size: 35px;
+    color: #081974;
+
+    cursor: pointer;
+    z-index: 10001;
+    background: transparent;
+    border: none;
+   
+
+}
+
+.logoResponsivo img{
+    display: none;
+}
+
+
+
+@media (max-width:600px){
+    .logo img{
+        display: none;
+    }
+
+    .carousel{
+        width: 100%!important;
+    }
+
+    #btn-mobile{
+        display: block;
+    }
+
+    .logoResponsivo img{
+        display: none;
+        width: 150px;
+        margin-left: -160px;
+    }
+    .navBar{
+        position: relative;
+    }
+    .navInfo{
+        display: none;
+        position: absolute;
+    }
+
+    .menuResponsivo{
+        display: block;
+    }
+    .navResponsivo{
+        display: none;
+        list-style-type: none;
+        position: absolute;
+        top: 188%;
+        right: 2%;
+        width: 200px;
+        height: 78vh;
+        background-color: #081974;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        transition: all .50s ease;
+        text-align: center;
+        margin-top: -60px;
+        box-shadow: 3px 3px;
+        z-index: 1000;
+ 
+        
+        
+    }
+
+    .navResponsivo li{
+        margin-bottom: 3rem;
+    }
+    #fechar{
+        margin-right: -150px;
+        font-size: 20px;
+    }
+    .navResponsivo a{
+        color: white;
+        text-decoration: none;
+        padding: 0;
+        transition: 0.5s;
+        border-bottom: 2px solid transparent;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        justify-content: space-around ;
+        
+        
+    }
+    .navResponsivo a:hover{
+        color: #ff9a00 ;
+        border-bottom: 2px solid #ff9a00;
+    }
+    .icones{
+        display: none;
+    }
+    video{
+        display: none;
+    }
+ 
+  
+
+    .navBar .active .navInfo{
+        display: flex;
+    }
+
+    #fechar{
+        text-decoration: none;
+    }
+
+   
+}
+

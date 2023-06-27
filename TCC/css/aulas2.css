@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-background: #eceff1;
+    --clr-white: #ffffff;
+    --clr-primary: #ff9a00;
+    --clr-gray: #263238;
+
+    --font-size: 16px;  
+    --border-radius: 0.2em;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size);
+    color: var(--clr-gray);
+    background-color: var(--clr-background);
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1em;
+}
+
+.container{
+    background-color: var(--clr-white);
+    border: var(--border-radius);
+    box-shadow: 8px 8px 4px #cfd0d2;
+    padding: 1em;
+    border-top: 4px solid var(--clr-primary);
+    height: auto;
+
+}
+
+#box-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.principal{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+/*NavBar*/
+.navInfoReservas{
+    align-items: center;
+    background-color: #ff9a00;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.navInfoReservas a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+}
+
+.navInfoReservas a:hover{
+    color: #081974 ;
+    border-bottom: 2px solid #081974;
+}
+
+.navResponsivoReservas{
+    display: none;
+    
+}
+
+
+.menuResponsivoReservas{
+    display: none;
+}
+
+@media screen and (max-width:750px){
+    body{
+       --font-size:16px; 
+    }
+
+    #box-grid{
+        grid-template-columns: 1fr;
+
+    }
+
+    .horas{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1.5em;
+    }
+
+    .h1{
+        margin: 0.5em 0;
+    }
+
+    .navInfoReservas{
+        display: none;
+    }
+    .navResponsivoReservas{
+        display: block;
+        list-style-type: none;
+        position: absolute;
+        top: 188%;
+        right: 2%;
+        width: 200px;
+        height: 78vh;
+        background-color: #ff9a00;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        transition: all .50s ease;
+        text-align: center;
+        margin-top: -320px;
+        box-shadow: 3px 3px;
+        margin-top: -1500px;
+        
+        
+    }
+
+    .navResponsivoReservas a{
+        color: white;
+        text-decoration: none;
+        padding: 0;
+        transition: 0.5s;
+        border-bottom: 2px solid transparent;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        justify-content: space-around ;
+        
+        
+    }
+    .navResponsivoReservas a:hover{
+        color: #081974 ;
+        border-bottom: 2px solid #081974;
+    }
+     .navResponsivoReservas li{
+        margin-bottom: 3rem;
+        
+    }
+    .menuResponsivoReservas{
+        display: block;
+    }
+    #fechar{
+        margin-right: -130px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+
+#btn-mobile
+{
+    display: none;
+    font-size: 35px;
+    color: #ff9a00;
+
+    cursor: pointer;
+    z-index: 10001;
+    background: transparent;
+    border: none;
+   
+    margin: 2 0px 10px;
+}
+
+.navInfoReservas li{
+    display: none;
+}
+
+}

@@ -1,0 +1,82 @@
+
+
+.TextoSobre{
+    padding-left: 10px;
+    margin-left: 10px;
+    visibility: hidden;
+    
+}
+
+.Texto1{
+    font-size: 20px;
+    padding: 30px;
+   
+}
+
+.Texto2{
+    font-size: 20px;
+    padding: 30px;
+   
+}
+
+.Texto3{
+    font-size: 20px;
+    padding: 30px;
+    
+
+}
+.Texto4{
+    font-size: 20px;
+    padding: 30px;
+    
+
+}
+.Texto5{
+    font-size: 20px;
+    padding: 30px;
+    
+
+}
+
+.Sobreh1{
+   display: none;
+}
+
+.hr{
+    visibility: hidden;
+    width: 800px;
+    border:0; 
+    box-shadow:5px 5px 10px black; 
+    background:#081974; 
+    padding:1px; 
+    margin-left: 200px;
+    border-radius: 10px;
+
+
+}
+
+
+
+.localh2{
+    text-align: center;
+}
+
+@media screen and (max-width:760px){
+    .propaganda{
+        display: none;
+    }
+    .carousel{
+        margin-top: -80px;
+        margin-left: 18px;
+    }
+ 
+    .historiaTexto{
+        padding-top: 10px;
+    }
+
+    .hr{
+        margin-left: -20px;
+        width: 400px;
+    }
+    
+}
